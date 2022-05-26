@@ -1,0 +1,1529 @@
+body{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-image: radial-gradient(rgba( 136, 138, 107, 0), rgb(153 153 153 / 52%)), url(../image/Logo.png); */
+    background-image: radial-gradient(rgba( 136, 138, 107, 0), rgb(153 153 153 / 52%));
+    overflow-x: hidden;
+}
+
+/* header image */
+.header_responisve img{
+    width: 80%;
+}
+
+/* Navigation CSS */
+li.nav-item.dropdown .dropdown-content-lg,
+li.nav-item.dropdown .dropdown-content-sm,
+li.nav-item.dropdown .dropdown-content {
+    display: none;
+}
+li.nav-item.dropdown:hover .nav-link.dropdown-toggle.active + .dropdown-content-lg,
+li.nav-item.dropdown:hover .nav-link.dropdown-toggle.active + .dropdown-content-sm,
+li.nav-item.dropdown:hover .nav-link.dropdown-toggle.active + .dropdown-content{
+    display: block;
+    position: absolute;
+    background: #d8d8d8;
+    min-width: 210px;
+    left: 6px;
+    z-index: 100;
+    border-left: 11px solid #464646;
+    padding: 5px 0px;
+}
+.dropdown-content-lg a.text-dark,
+.dropdown-content-sm a.text-dark,
+.dropdown-content a.text-dark{
+    display: block;
+    padding: 5px 10px;
+    color: #1f1e1e !important;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.dropdown-content .report_module button:hover,
+.dropdown-content-lg a.text-dark:hover,
+.dropdown-content-sm a.text-dark:hover,
+.dropdown-content a.text-dark:hover{
+    text-decoration: none;
+    background: #c2c2c2;
+    color: #000 !important;
+    font-weight: 600;
+}
+.nav-tabs .nav-link{
+    padding: 6px 9px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.nav-tabs{
+    border-bottom: none !important;
+}
+nav.navbar.navbar-expand-lg{
+    background-color: #fff;
+    border-top: 8px solid #072d6c;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border: 1px solid #ffffff00;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background: #e3010f !important;
+    color: #fff !important;
+    border-radius: 50px !important;
+    padding: 6px 9px !important;
+    border: 1px solid #e3010f !important;
+}
+div#navbarNav{
+    margin-top: 20px;
+    place-content: flex-end;
+    margin-right: 55px;
+}
+.dropdown-toggle-split::after, .dropright .dropdown-toggle-split::after, .dropup .dropdown-toggle-split::after,
+.dropdown-toggle::after{
+    display: none !important;
+}
+.dropdown-content.report .report_module{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+.dropdown-content.report{
+    padding: 0px !important;
+}
+.dropdown-content .report_module button{
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-between;
+    background: #d8d8d8;
+    border: #d8d8d8;
+    color: #1f1e1e;
+    font-size: 15px;
+    font-weight: 500;
+}
+.dropdown-menu.dropdown-content.show{
+    display: block !important;
+    left: 3px;
+    background: #d8d8d8;
+    min-width: 210px;
+    z-index: 100;
+    border-left: 11px solid #464646;
+    padding: 5px 0px;
+
+}
+.dropdown-menu.dropdown-content.export.show{
+    top: 69px;
+}
+.dropdown-menu.dropdown-content.import.show{
+    top: 37px;
+}
+/* Page CSS */
+.bind_input {
+    display: flex;
+    align-items: center;
+}
+span.spacing{
+    margin:0px 10px;
+}
+button.btn.save-btn{
+    /* border: 1px solid #ddd; */
+    /* margin: 0px 10px; */
+    border-radius: 0px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.btn_group button.btn .fa{
+    margin-left: 10px;
+}
+/* Tab in pages */
+.detail_edit nav.tab{
+    margin-bottom: 15px;
+    background: #ffff;
+    padding: 12px 18px;
+}
+.detail_edit div#nav-tabContent{
+    background: #fff;
+    padding: 12px 18px;
+}
+.detail_edit .nav-tabs .nav-item.show .nav-link,
+.detail_edit .nav-tabs .nav-link.active{
+    color: #072d6c !important;
+    border-radius: 0px !important;
+    padding: 10px 33px !important;
+    border: none !important;
+    border-bottom: 3px solid #072d6c !important;
+    background-color: transparent !important;
+    font-weight: 600;
+}
+.detail_edit .nav-tabs .nav-link{
+    color: #000 !important;
+    border-bottom: 1px solid #cabfc0 !important;
+}
+
+/* themeing */
+.detail_edit{
+    background-color: #fff;
+    
+}
+fieldset{
+    position: relative;
+    z-index: 0;
+    /* border: 1px solid #b7afaf !important; */
+    box-shadow: 4px 4px 8px 1px #a5a5a5;
+}
+legend{
+    position: absolute;
+    z-index: 100000;
+    top: -29px;
+    left: 18px;
+    background: #fffffff2;
+    border: 1px solid #dcdcdc;
+    font-size: 20px !important;
+    font-weight: 500;
+    padding: 5px 10px !important;
+    width: auto !important;
+}
+.card{
+    border: none !important;
+}
+.form-group{
+    margin: 0px 0px 20px 0px;
+    place-items: center;
+}
+.required-star{
+    color: red;
+    pointer-events: none;
+}
+.border_sales{
+    padding: 7px 9px;
+    margin-bottom: 16px;
+    border: 1px solid #ebebeb !important;
+}
+.form-label {
+    /* margin-bottom: .5rem; */
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-family: sans-serif;
+    display: flex;
+}
+/* span.sign {
+    margin-right: 5px;
+} */
+span.spacing {
+    margin: 0px 25px;
+}
+.form-select, .form-control{
+    border: 1px solid #b7b6b6;
+    /* box-shadow: 1px 1px 5px 1px #a7a7a7; */
+    border-radius: 0px !important;
+    height: calc(1.5em + 0.75rem + 0px) !important;
+}
+
+select{
+    width: 100%;
+    height: 35px;
+    font-size: 17px;
+    padding: 5px 10px;
+    border: 1px solid #b7b6b6;
+    border-radius: 3px;
+    background: #fff;
+}
+.link{
+    font-size: 14px;
+    color: #072d6c;
+    text-decoration: none;
+    font-weight: 400;
+}
+.padding_right_remove{
+    padding-right: 0px;
+}
+button.btn.dropdown{
+    border: 1px solid #b7b6b6;
+    /* box-shadow: 1px 1px 5px 1px #a7a7a7; */
+    border-radius: 3px;
+    height: 35px;
+    font-size: 17px;
+    padding: 5px 10px;
+    /* width: 100%; */
+    margin-left: 10px;
+    background: #466391;
+    color: #fff;
+}
+.checkbox_padding{
+    padding-left: 26px;
+}
+.checkbox_padding div {
+    margin: 0px 3px;
+}   
+.detail_edit .nav-tabs .nav-link{
+    font-weight: 500;
+    font-size: 15px;
+    padding: 10px 34px;
+}
+span.exclma{
+    border: 1px solid #072d6c;
+    border-radius: 50px;
+    padding: 2px 11px;
+    margin-right: 11px;
+    font-size: 15px;
+    color: #072d6c;
+}
+.alert{
+    font-size: 16px;
+    margin: 10px 0px;
+    margin-bottom: 26px;
+    color: #072d6c;
+}
+.Continueyourshipment p{
+    font-size: 15px;
+}
+.commodity a,
+.Continueyourshipment a{
+    color: #072d6c;
+    text-decoration: none !important;
+    font-size: 15px;
+}
+.confirmation table,
+.commodity table{
+    border: 1px solid #beb8b8;
+    overflow: auto;
+}
+.commodity select{
+    width: 50%;
+}
+.confirmation th{
+    font-size: 15px;
+    vertical-align: top;
+} 
+.commodity th{
+    font-size: 15px;
+    word-break: break-all;
+    vertical-align: top;
+}
+.confirmation tbody, .confirmation td, .confirmation tfoot, .confirmation th, .confirmation thead,.confirmation tr,
+.commodity tbody, .commodity td,.commodity tfoot,.commodity th,.commodity thead,.commodity tr{
+    border: none  !important;
+}
+.commodity .margin_left{
+    margin-left: 10px;
+    width: 33%;
+}
+.additional{
+    font-size: 15px;
+    color: #072d6c;
+    margin: 15px 0px;
+}
+.additional span{
+    border: 1px solid #072d6c;
+    padding: 1px 4px;
+    margin-right: 11px;
+}
+.save_for_later{
+    font-size: 15px;
+    background: #a2a4a7;
+    color: #fff;
+    width:22%;
+    padding: 5px 14px;
+}
+.ship{
+    font-size: 15px;
+    background: #072d6c;
+    color: #fff;
+    width: 22%;
+    padding: 5px 14px;
+    
+}
+.confirmation p{
+    font-size: 15px;
+
+}
+.confirmation a{
+    color: #072d6c;
+    text-decoration: none;
+}
+.confirmation .btn{
+    width: 10%;
+}
+
+/* ups tab css */
+.customdocs
+{
+    overflow-y: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.custominvoice
+{
+    text-align: center;
+    width: 100%;
+}
+
+/* inext tab css */
+.inext1
+{
+    text-decoration: none;
+}
+
+.inext2
+{
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    color: #072d6c;
+}
+
+.inext3
+{
+    text-align: center;
+}
+
+.inext4
+{
+    background-color: #464646;
+}
+
+/* Operation tab css */
+.table1
+{
+    text-align: center;
+    width: 100%;
+}
+
+
+/* login  */
+.login{
+    overflow: hidden;
+}
+.footer{
+    background: #072d6c;
+    padding: 32px 10px;
+    color: #fff;
+}
+.border-right{
+    border-right: 2px solid #dbdbdb !important;
+}
+.login_banner_image img {
+    width: 80%;
+    height: 100%;
+}
+.card.o-hidden.border-0.count {
+    height: 100%;
+}
+form.profile_form {
+    padding: 0px 70px;
+    border: none;
+}
+.profile_form .form-group {
+    margin-bottom: 30px !important;
+    position: relative;
+}
+.forgot_line
+{
+    justify-content: space-between;
+}
+.login .btn.btn-primary{
+    /* background: #050404; */
+    background: #072d6c;
+    border: #072d6c;
+    cursor: pointer !important;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.login a.btn.btn-primary{
+    color: #fff;
+}
+/* form  floating*/
+.profile_form input.contact_input {
+    border: 1px solid #cecece !important;
+    border-radius: 8px !important;
+    position: relative;
+    color: #000 !important;
+    margin-bottom: 8px;
+    height: calc(100% -90);
+    height: 42px;
+    font-size: 16px;
+  }
+  
+  .profile_form label.flow {
+  position: absolute;
+  top: 10px;
+  left: 17px;
+  transition: .4s;
+  font-size: 16px;
+  }
+  .profile_form .form-control:focus~label.flow {
+  top: -10px !important;
+  background: #fff !important;
+  padding: 1px 4px !important;
+  transition: .4s;
+  font-size: 13px;
+  }
+  
+  .profile_form .contact_input.active~label.flow {
+  top: -10px !important;
+  background: #fff !important;
+  padding: 1px 4px !important;
+  transition: .4s;
+  font-size: 13px;
+  }
+  
+  .profile_form .form-group {
+  margin-bottom: 30px !important;
+  position: relative;
+  }
+  
+  .form-group .form-control:placeholder-shown:not(:focus)+* {
+    top: .3em;
+  }
+  
+  .login .form-group label.flow {
+    background: #fff;
+  }
+  .login .form-group label.flow{
+    position: absolute;
+    top: -0.8em;
+    left: .75rem;
+    z-index: 3;
+    padding: 1px 5px;
+  }
+  .login .form-group{
+      position: relative;
+  }
+  .login .card-body{
+    padding: 26px 22%;
+  }
+  .login_page{
+      background-color: #fff;
+  }
+  .login a{
+      color: #072d6c;
+      text-decoration: none;
+  }
+  .form-control:focus {
+    border-color: #c5cedd !important;
+    box-shadow: 2px 2px 5px 1px #616a7a !important;
+  }
+  table{
+      width: 100%;
+      text-align: center;
+  }
+  tbody, td, tfoot, th, thead, tr{
+      border: none !important;
+      font-size: 15px;
+  }
+  .form.card,
+  .table-responsive{
+    border: 1px solid #ddd !important;
+    border-radius: 0px;
+  }
+  .form.card {
+        padding-bottom: 13px;
+        padding-top: 10px;
+  }
+  th {
+    background: #e3e3e3;
+  }
+  .table.card.mt-4{
+      padding: 17px 16px;
+  }
+  .download{
+    color: #072d6c;
+    text-decoration: underline;
+  }
+  .error{
+    font-size: 13px;
+    color: #d20000;
+  }
+  .btn.btn-common{
+    color: #ffffff;
+    background-color: #73787e;
+    border-color: #73787e;
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+  textarea.text{
+      width: 100%;
+  }
+  hr.yellow_line{
+    color: #f9e351;
+    /* margin-left: 54px; */
+    opacity: 1;
+    margin: 8px 0px 20px 54px;
+    border-top: 2px solid rgba(0,0,0,.1);
+  }
+  .ml-6{
+      margin-left: 3.4rem;
+  }
+
+/* Nikki's code start */
+.uk1{
+    margin-left: 262px;
+}
+.ship1{
+    margin-left: 146px;
+}
+.msg{
+    margin-left: 260px;
+}
+.t1{
+    width: 100%;
+}
+.flightupdateinput{
+    margin-left: 262px;
+}
+.clubbingtext{
+    width: 98%;
+}
+.drslabel{
+    margin-left: 8px;
+}
+.add-btn{
+    margin-left: 253px;
+}
+.flightupdatetext{
+    width: 100%;
+}
+.fuelsettingimporttext{
+    width: 100%;
+}
+.customeraccountbtn{
+    margin-left: 262px;
+}
+.customeraccounttext{
+    width: 100%;
+}
+.currencyexchangetext{
+    width: 100%;
+}
+.outstandingreporttext{
+    width: 100%;
+}
+.emplisttext{
+    width: 100%;
+}
+.userlisttext{
+    width: 100%;
+}
+
+.userreginput{
+    margin-left: 300px;
+}
+.userregtable{
+    margin-left: 5px;
+}
+
+.awbloginput{
+    margin-left: 260px;
+}
+.awblogtext{
+    width: 100%;
+}
+
+.loginaudittext{
+    width: 100%;
+}
+
+.customdocs
+{
+    overflow-y: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.inextinput1
+{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 15px 0px 14px 145px;
+    margin-right: 1px;
+    margin-bottom: 10px;
+}
+.inextheading
+{
+    color: darkslateblue;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+.inextinputcode
+{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 15px 0px 14px 18px;
+    margin-right: 90px;
+    margin-left: 165px;
+}
+.inexttextarea
+{
+    background-color: cyan;
+}
+.inextline1
+{
+    color: red;
+    font-weight: bold;
+}
+.table1
+{
+    text-align: center;
+    width: 100%;
+}
+
+.customtable
+{
+    text-align: center;
+    width: 100%;
+}
+
+.table-responsive.custominvoice4
+{
+    height: 300px;
+}
+.customtable2 tr:nth-child(1)
+{
+    position: sticky;
+    top: 2px;
+    background-color: lightgrey;
+}
+.customtable3 tr:nth-child(1)
+{
+    position: sticky;
+    top: 28px;
+    background-color: white;
+}
+.dummy
+{
+    height: 57%;
+}
+.baggingrun
+{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 20px 18px 3px 18px;
+    margin-bottom: 20px;
+}
+.payentry
+{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 25px 18px 1px 18px;
+    margin-bottom: 20px;
+}
+.ediimport
+{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 25px 18px 20px 18px;
+    margin-bottom: 15px;
+}
+
+.hr_line
+{
+    color: black;
+    opacity: 1;
+    margin: 8px -28px 0px 1px;
+    border-top-width: 1px;
+}
+.s1
+{
+    color: royalblue;
+    font-weight: bold;
+}
+.loadreceivetable
+{
+    text-align: center;
+    width: 100%;
+}
+
+.pickupentrytable{
+    padding: 12px;
+}
+.pickupentrytext{
+    width: 100%;
+}
+
+.pickuplist
+{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 16px 18px 15px 18px;
+    margin-bottom: 15px;
+}
+.pickuptext
+{
+    width: 100%;
+}
+
+.pickupsummary
+{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 16px 18px 15px 18px;
+}
+
+.pickupdrs3
+{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 16px 18px 15px 18px;
+}
+
+hr.red_line{
+    color: #d11a1a;
+    opacity: 1;
+    margin: 8px 0px 20px 54px;
+    border-top-width: 1px;
+}
+
+.cashentrytitle
+{
+    color: red;
+}
+
+.cashregistertext
+{
+    width: 100%;
+}
+
+.agentmanifestheading
+{
+    color:royalblue;
+    font-weight: bold;
+    text-align: center;
+}
+.agentmanifestorpart
+{
+    color: royalblue;
+    font-weight: bold;
+    text-align: center;
+}
+.agentmanifestcheck
+{
+    color: royalblue;
+    font-weight: bold;
+}
+.agentmanifesttext
+{
+    width: 100%;
+}
+
+.hubfield
+{
+    width: 100%;
+}
+.quickbooking1
+{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 15px 0px 14px 120px;
+    margin-right: 1px;
+    margin-bottom: 10px;
+}
+
+.branchmanifesttext
+{
+    width: 100%;
+    background-color: lightcyan;
+}
+.branchmanifest2
+{
+    background-color: papayawhip;
+}
+
+.coddutycollection1
+{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 16px 18px 15px 18px;
+    margin-top: 10px;
+}
+
+.fedexlabelinput
+{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 15px 0px 14px 145px;
+    margin-right: 1px;
+    margin-bottom: 10px;
+}
+.fedexheading
+{
+    color: darkslateblue;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+.fedexlabelinputcode
+{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 15px 0px 14px 18px;
+    margin-right: 90px;
+    margin-left: 165px;
+}
+.fedextextarea
+{
+    background-color: cyan;
+    width: 100%;
+}
+.fedexline1
+{
+    color: red;
+    font-weight: bold;
+}
+
+.dataentry1
+{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 15px 0px 14px 105px;
+}
+.dataentrytable
+{
+    overflow-x: auto;
+}
+.dataentrytable3 
+{
+    text-align: left;
+    padding: 8px;
+}
+  
+.dataentrytable4:nth-child(even)
+{
+    background-color: #e9ecf3cb;
+} 
+
+.loadtext
+{
+    width: 100%;
+}
+
+.salesreporttext
+{
+    width: 100%;
+}
+
+.modifyexporttable
+{
+    overflow-x: auto;
+}
+.modifyexporttable2
+{
+    text-align: left;
+    padding: 8px;
+}
+.modifyexporttable3:nth-child(even)
+{
+    background-color: #e9ebf1cb;
+}
+.autoshiptext
+{
+    width: 100%;
+}
+.autofwdtext
+{
+    width: 100%;
+}
+
+.rateviewtext
+{
+    width: 100%;
+}
+
+.codratetext
+{
+    width: 100%;
+}
+
+.codrateviewtext
+{
+    width: 100%;
+}
+
+.dutyinvoicesummarytext
+{
+    width: 100%;
+}
+
+.exportinvoicetable
+{
+    padding: 10px;
+}
+.exportinvoicetitle
+{
+    color: darkblue;
+    text-align: center;
+}
+.exportinvoiceheading
+{
+    color: darkslateblue;
+    text-align: center;   
+}
+
+.dutyinvoicelist
+{
+    color: #d11a1a;
+    font-weight: bold;
+}
+.dutyinvoicetitle
+{
+    color: darkblue;
+    text-align: center;
+}
+.dutyinvoiceedit
+{
+    color: green;
+    font-size: 18px;
+}
+.dutyinvoicedelete
+{
+    color: #d20000;
+    font-size: 18px;
+}
+
+.cargoinvoicetable
+{
+    overflow-x: auto;
+}
+
+.exportinvoicesummarytitle
+{
+    color: #d20000;
+    text-align: center;
+}
+.exportinvoicesummarytext
+{
+    width: 100%;
+}
+
+.cashinvoicetable
+{
+    padding: 8px;
+}
+.cashinvoicetitle
+{
+    color: darkblue;
+    text-align: center;
+}
+
+.exportemailinvoicebox
+{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 30px 30px 20px 30px;
+}
+.exportemailsymbol
+{
+    color: red;
+}
+.emailhorizontalrow
+{
+    border-top: 1px solid black;
+}
+
+.domesticinvoicetable
+{
+    padding: 10px;
+}
+.domesticinvoiceheading
+{
+    color: darkblue;
+    text-align: center;
+}
+
+.domesticinvoicesummarytitle
+{
+    color: #d11a1a;
+    text-align: center;
+}
+.domesticinvoicesummarytext{
+    width: 100%;
+}
+
+.exportdutyinvoicebox
+{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 30px 30px 20px 30px;
+}
+.exportdutyinvoicesymbol
+{
+    color: red;
+}
+.exportdutyinvoicerow
+{
+    border-top: 1px solid black;
+}
+
+.exportimportinvoicetitle
+{
+    color: #d11a1a;
+    text-align: center;
+}
+.exportimportinvoicetext
+{
+    width: 100%;
+}
+
+.cashntdinvoicetable
+{
+    padding: 10px;
+}
+.cashntdinvoiceheading
+{
+    color: darkblue;
+    text-align: center;
+}
+
+.cashntdinvoicesummarytitle
+{
+    color: #d11a1a;
+    text-align: center;
+}
+.cashntdinvoicesummarytext
+{
+    width: 100%;
+}
+
+.importinvoicetable
+{
+    padding: 8px;
+}
+.importinvoiceheading
+{
+    color: darkblue;
+    text-align: center;
+}
+
+.codinvoicelist
+{
+    color: #d11a1a;
+    font-weight: bold;
+}
+.codinvoiceedit
+{
+    color: green;
+    font-size: 18px;
+}
+.codinvoicedelete
+{
+    color: red;
+    font-size: 18px;
+}
+.codinvoicetitle
+{
+    color: darkblue;
+    text-align: center;
+}
+
+.dutyinvoiceimportlist
+{
+    color: #d11a1a;
+    font-weight: bold;
+}
+.dutyinvoiceimportedit
+{
+    color: green;
+    font-size: 18px;
+}
+.dutyinvoiceimportdelete
+{
+    color: red;
+    font-size: 18px;
+}
+.dutyinvoiceimporttitle
+{
+    color: darkblue;
+    text-align: center;
+}
+
+.cargoinvoiceimportcheck
+{
+    color: red;
+    font-weight: bold;
+}
+.cargoinvoiceimportedit
+{
+    color: green;
+    font-size: 18px;
+}
+.cargoinvoiceimportdelete
+{
+    color: red;
+    font-size: 18px;
+}
+.cargoinvoiceimporttitle
+{
+    color: darkblue;
+    text-align: center;
+}
+
+.importinvoicesummarytitle
+{
+    color: #d11a1a;
+    text-align: center;
+}
+.importinvoicesummarytext
+{
+    width: 100%;
+}
+
+.importdutyinvoicesummarytext
+{
+    width: 100%;
+}
+
+.cargoimportinvoicesummarytext
+{
+    width: 100%;
+}
+
+.codinvoicesummarytext{
+    width: 100%;
+}
+
+.importemailsymbol
+{
+    color: red;
+}
+.importemailhorizontalrow
+{
+    border-top: 1px solid black;
+}
+
+.ratecalculatortext{
+    width: 100%;
+}
+
+.weightdifferenceemailsymbol{
+    color: red;
+}
+.weightdifferenceemailhorizontalrow{
+    border-top: 1px solid black;
+}
+.weightdifferenceemailcheck
+{
+    margin-left: 168px;
+}
+
+.costcomparebox
+{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 30px 30px 20px 30px;
+}
+.costcomparebox2
+{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 15px 30px 0px 30px;
+}
+.costcomparetext{
+    width: 100%;
+}
+
+.covidratexlstext{
+    width: 100%;
+}
+
+.covidrateviewtext{
+    width: 100%;
+}
+
+.ratecirculartable{
+    padding: 5px;
+}
+.ratecirculartext{
+    width: 100%;
+}
+
+.customerqueryexporttable{
+    padding: 10px;
+}
+.customerqueryexporthr{
+    border: 1px solid blue;
+}
+.customerqueryexportheading{
+    color: #d11a1a;
+}
+.customerqueryexporttext{
+    width: 100%;
+}
+
+.customerqueryimporttext{
+    width: 100%;
+}
+.customerqueryimporttable{
+    padding: 10px;
+}
+
+.autoemailsymbol{
+    color: red;
+}
+hr.autoemailhr{
+    color: #000;
+    opacity: 1;
+    margin: 8px 0px 20px 20px;
+    border-top: 1px solid rgba(0,0,0,.1);
+    width: -webkit-fill-available;
+}
+.autoemailcheck{
+    margin-left: 95px;
+}
+
+.complaintdashboardtable{
+    padding: 17px;
+}
+
+.eventactivityheading{
+    color: darkblue;
+    text-align: center;
+}
+.eventactivitytext{
+    width: 100%;
+}
+
+.uploadpodentry1{
+    margin-left: 160px;
+}
+
+.forwardingentryexporttext{
+    width: 100%;
+}
+
+.forwardinguploadexport1{
+    margin-left: 160px;
+}
+
+.podreportexport{
+    width: 100%;
+}
+
+.uploadpodimportheading{
+    margin-left: 212px;
+    color: red;
+}
+
+.forwardingentryimporttext{
+    width: 100%;
+}
+
+.forwardinguploadimport1{
+    margin-left: 160px;
+}
+
+.podreportimport{
+    width: 100%;
+}
+
+.upstrackinput{
+    margin-left: 211px;
+}
+
+.podemailsymbol{
+    color: red;
+}
+.podemailhr
+{
+    color: #000;
+    opacity: 1;
+    margin: 8px 0px 20px 20px;
+    border-top: 1px solid rgba(0,0,0,.1);
+    width: -webkit-fill-available;
+}
+.podemailinput{
+    margin-left: 170px;
+}
+
+.forwarderbillentrytable{
+    padding: 10px;
+}
+.line1{
+    margin-left: 150px;
+}
+.line2{
+    margin-left: 145px;
+}
+.fwdbilltable{
+    padding: 8px;
+}
+.forwarderbillentrytext{
+    width: 100%;
+}
+
+.fwdbillentryimporttext{
+    width: 100%;
+}
+
+.fwdbillentryreporttext{
+    width: 100%;
+}
+button.btn.btn-primary.searchbtn.rounded-0{
+    padding: 0.34rem 0.75em;
+}
+.box_type{
+    border: 1px solid #000;
+    padding: 11px 0px;
+    margin-top: 15px;
+}
+/* .border_sec{
+    border: 1px solid #ddd;
+    padding: 6px 6px;
+}
+.border_sec .bind_inputs{
+    text-align: -webkit-center;
+}
+.border_sec select.form-select{
+    width: 16%;
+    margin-left: 17px;
+} */
+.table_out{
+    box-shadow: 4px 4px 8px 1px #a5a5a5;
+    padding: 3px 4px;
+}
+.awb-check{
+    display: flex;
+}
+.border-rights{
+    border-right:1px solid #000;
+}
+@media (max-width: 450px){
+    .button_media button {
+    margin-bottom: 5px;
+     width: 100%;
+    }
+}
+@media (max-width: 768px){
+    div#navbarNav{
+        text-align: center;
+        margin-right: 0px;
+    }
+    ul#myTab{
+        flex-direction: column;
+        padding: 10px 85px;
+    }
+    span.spacing{
+        display: none;
+    }
+    hr.yellow_line{
+        margin: 8px 0px 20px 0px;
+    }
+    .form-row .form-control{
+        margin-bottom: 15px;
+    }
+    .detail_edit .nav-tabs .nav-link,
+    .detail_edit .nav-tabs .nav-item.show .nav-link, .detail_edit .nav-tabs .nav-link.active{
+        padding: 10px !important;
+    }
+    .detail_edit nav div#nav-tab{
+        display: flex;
+        flex-direction: column;
+    }
+    .margin_top,
+    fieldset.form-group.border.p-3.mt-4{
+        margin-top: 3rem !important;
+    }
+    legend{
+        top: -22px;
+        font-size: 15px !important;
+    }
+    table.table-bordered{
+        border-collapse: separate;
+    }
+    .table-bordered thead td, .table-bordered thead th{
+        padding: 6px 10px;
+    }
+    .customeraccountbtn{
+        margin-left: 0px;
+    }
+    .remove_ml,
+    span.text-primary.ml-4.remove_ml,
+    .select.border.remove_ml.p-3.mt-2.ml-4,
+    .form-check.remove_ml.form-check-inline.ml-5{
+        margin-left:0px !important;
+    }
+    .button_media button{
+        margin-bottom: 5px;
+        /* width: 100%; */
+    }
+    .form-row{
+        width: 100%;
+    }
+    .bind_input .row.form-row .col-md-8,
+    .bind_input .row.form-row .col-md-4{
+        padding-right: 0px;
+    }
+    .awb-check{
+        margin-left: 0px !important;
+    }
+    .fedexlabelinput.fedeximport{
+        padding-left: 15px;
+    }
+    .fedexlabelinputcode.fedeximportradio{
+        padding: 10px 0px 10px 15px;
+    }
+    
+}
+@media (max-width: 992px){
+    .header_responisve{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        place-items: center;
+    }
+
+    .navbar-light .navbar-toggler{
+        padding: 4px 6px;
+        height: fit-content;
+    }
+    .button_media button{
+        margin-bottom: 5px;
+        /* width: 100%; */
+    }
+    .awb-check{
+        display: block;
+        margin-left: 25px;
+    }
+    .fedexlabelinputcode{
+        margin:0px;
+    }
+    .dataentry1{
+        padding:15px 0px 14px 15px;
+    }
+    .flightupdateinput{
+        margin-left: 0px;
+    }
+    .quickbooking1{
+        padding: 15px 0px 14px 12px;
+    }
+    .form-control{
+        overflow: hidden;
+    }
+    legend{
+        font-size: 15px !important;
+    }
+}
+@media (max-width: 1200px) {
+    .inextinputcode{
+        margin-right: 15px;
+    margin-left: 15px;
+    }
+}
+.dhltext{
+    width: 100%;
+}
+.shipCheck{
+    margin-left: 17px;
+}
+.check1{
+    margin-left: 60px;
+}
+.icon{
+    color: rgb(14, 121, 243);
+}
+.box1{
+    box-shadow: 1px 5px 22px 1px #b7b6b6;
+    padding: 30px 30px 20px 30px;
+}
+.check2{
+    margin-left: 235px;
+}
+.b1{
+    font-size: 18px;
+}
+.check3{
+    margin-left: 3px;
+}
+.card1{
+    background-color: #c0c3c829;
+}
+/* Nikki's code end */
+
+/*Custom code by bnmanish*/
+.search-suggestion{
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+/*Custom code by bnmanish*/

@@ -1,0 +1,28 @@
+module                         error
+===========                    ==========
+country                        no error
+state                          no error
+city                           no error
+currencyExchange               no error
+currencyMaster                 no error
+farworderMaster                error //search state dissable and not searching state
+networkMaster                  no error
+service                        no error
+forworderService               code search is not working.
+saleType                       no error
+shipmentTypeMaster             no error
+eventMaster                    no error
+misslinousMaster               no error
+route                          no error
+vehicleMaster                  no error
+currencyMaster                 no error
+commadityMaster                column name at place of status iso_code is written in listing and fieldset name 
+                               is country master at the place commodity master
+clientList                     no error
+fuleSetting                    no error
+client OnBording Process       no error
+CustomerAccount                next button is not working on customer details.
+
+
+
+
